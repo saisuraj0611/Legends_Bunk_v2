@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        app:cardBackgroundColor="#212121"
+        app:cardCornerRadius="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_4sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            tools:layout_editor_absoluteX="@dimen/_0sdp"
+            tools:layout_editor_absoluteY="@dimen/_18sdp">
+
+            <Button
+                android:id="@+id/absentButton"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_marginStart="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_39sdp"
+                android:background="@drawable/ic_absentcross"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#F1EAEA"
+                android:textColorHint="#EADEDE"
+                app:layout_constraintEnd_toStartOf="@+id/cancelledButton"
+                app:layout_constraintStart_toEndOf="@+id/presentButton"
+                app:layout_constraintTop_toBottomOf="@+id/subjectTotalPercentage" />
+
+            <Button
+                android:id="@+id/cancelledButton"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_61sdp"
+                android:background="@drawable/ic_cancelblocked"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subjectTotalPercentage" />
+
+            <Button
+                android:id="@+id/presentButton"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_marginStart="@dimen/_59sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:background="@drawable/ic_presenttick"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subjectName" />
+
+            <TextView
+                android:id="@+id/subjectName"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/prompt"
+                android:text="Biology"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/subjectTotalPercentage"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:fontFamily="@font/prompt"
+                android:text="75.55"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/totalAbsentNo"
+                android:layout_width="@dimen/_63sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="12"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/absentButton" />
+
+            <TextView
+                android:id="@+id/totalPresentNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginEnd="@dimen/_72sdp"
+                android:text="123"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/totalAbsentNo"
+                app:layout_constraintEnd_toStartOf="@+id/totalCancelledNo"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/totalCancelledNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_47sdp"
+                android:text="12"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/totalAbsentNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/totalPresentNo" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="You may bunk the next 2 classes."
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalAbsentNo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

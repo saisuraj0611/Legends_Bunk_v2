@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/helpLogPast"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpVacation"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpTimeTable"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpHistory"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpPostTimeTable"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpClassBunk"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/helpHome"
+        android:icon="@drawable/ic__help_icon"
+        android:orderInCategory="3"
+        android:title="Help"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/addSubjectMain"
+        android:icon="@drawable/ic_add_subject_button_actionbar"
+        android:orderInCategory="1"
+        android:title="Add Subject"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/deleteSubjectMain"
+        android:icon="@drawable/ic_delete_subject_main_white"
+        android:orderInCategory="2"
+        android:title="Delete subject"
+        app:showAsAction="ifRoom" />
+</menu>

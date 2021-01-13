@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_postTimeTable"
+            android:icon="@drawable/ic_post_timetable_white"
+            android:title="Time Table" />
+        <item
+            android:id="@+id/nav_log_past_attendance"
+            android:icon="@drawable/ic_restore_white"
+            android:title="Log Past Attendence" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_white"
+            android:title="History and Delete Attendance" />
+
+        <item
+            android:id="@+id/nav_create_TT"
+            android:icon="@drawable/ic_timetable_white"
+            android:title="Edit Time Table" />
+        <item
+            android:id="@+id/nav_futureAttendence"
+            android:icon="@drawable/ic_future_attendance_white"
+            android:title="Vacation Planner" />
+        <item
+            android:id="@+id/nav_classBunkCalc"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Class bunk calculator" />
+        <item
+            android:id="@+id/nav_thresholdAttendance"
+            android:icon="@drawable/ic_threshold_icon"
+            android:title="Threshold Attendance" />
+        <item
+            android:id="@+id/nav_backupRestore"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="Backup / Restore" />
+
+    </group>
+</menu>
